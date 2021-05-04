@@ -59,7 +59,7 @@ namespace servicio.api
             services.AddCors(options => {
                 options.AddPolicy(name: "PolicyCORSRegular", 
                                   builder => {
-                                      builder.WithOrigins("http://localhost:5000")
+                                      builder.WithOrigins("http://localhost:5000", "http://localhost:50499")
                                              .WithMethods("GET", "POST", "PUT", "DELETE")
                                              .WithHeaders("*");
                                   });
