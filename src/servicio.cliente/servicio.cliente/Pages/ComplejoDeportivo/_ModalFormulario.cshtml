@@ -1,0 +1,64 @@
+﻿<!-- Boton Nuevo -->
+<nav class="navbar navbar-light mb-5 mt-3">
+    <a class="navbar-brand btn btn-primary evento-complejo" title="Registrar Complejo" href="#" id="registrar">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="32" height="32" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+            <line x1="9" y1="12" x2="15" y2="12" />
+            <line x1="12" y1="9" x2="12" y2="15" />
+        </svg>
+    </a>
+</nav>
+
+<!-- Modal Formulario-->
+<div class="modal fade" id="modalFormulario" tabindex="-1" role="dialog" aria-labelledby="modalHeader" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form id="formularioComplejo">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalHeader">Registrar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="sedeId">Sede</label>
+                        <select class="form-control" id="sedeId" name="sedeId">
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipoComplejoId">Tipo Complejo</label>
+                        <select class="form-control" id="tipoComplejoId" name="tipoComplejoId">
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="jefeId">Jefe</label>
+                        <select class="form-control" id="jefeId" name="jefeId">
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="complejo">Complejo</label>
+                        <input type="text" class="form-control" id="complejo" name="complejo">
+                    </div>
+                    <div class="form-group">
+                        <label for="localizacion">Localizacion</label>
+                        <input type="text" class="form-control" id="localizacion" name="localizacion">
+                    </div>
+                    <div class="form-group">
+                        <label for="noArea">No. Area</label>
+                        <input type="number" class="form-control" id="noArea" name="noArea">
+                    </div>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="estado" name="estado">
+                        <label class="custom-control-label" for="estado">Activo</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
